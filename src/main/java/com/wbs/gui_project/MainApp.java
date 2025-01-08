@@ -12,9 +12,9 @@ public class MainApp extends Application
     @Override
     public void start(Stage stage) throws IOException
     {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("u4-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("GUI Project");
+        //stage.setTitle("Lagerverwaltung");
         stage.setScene(scene);
         stage.show();
     }

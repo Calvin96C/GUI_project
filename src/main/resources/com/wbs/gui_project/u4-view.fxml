@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wbs.gui_project.controller.U4Controller">
+   <Label style="-fx-font-size: 16px;" text="Lagerverwaltung">
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin></Label>
+   <TextField fx:id="nameField" promptText="Name">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" />
+      </VBox.margin>
+   </TextField>
+   <TextField fx:id="descriptionField" promptText="Beschreibung">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" />
+      </VBox.margin></TextField>
+   <TextField fx:id="quantityField" promptText="Menge">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" />
+      </VBox.margin></TextField>
+   <TextField fx:id="priceField" promptText="Preis (€)">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" />
+      </VBox.margin></TextField>
+   <Button onAction="#produktHinzufuegen" text="Produkt hinzufügen" />
+   <TextField fx:id="searchField" promptText="Suche">
+      <VBox.margin>
+         <Insets left="20.0" right="20.0" top="30.0" />
+      </VBox.margin></TextField>
+
+   <!-- TableView for product list -->
+   <TableView fx:id="productTable" prefHeight="200">
+      <columns>
+         <TableColumn fx:id="nameColumn" text="Name" />
+         <TableColumn fx:id="descriptionColumn" minWidth="150" text="Beschreibung" />
+         <TableColumn fx:id="quantityColumn" text="Menge" />
+         <TableColumn fx:id="priceColumn" text="Preis (€)" />
+      </columns>
+      <VBox.margin>
+         <Insets bottom="20.0" left="20.0" right="20.0" />
+      </VBox.margin>
+   </TableView>
+</VBox>

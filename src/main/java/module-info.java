@@ -7,4 +7,5 @@ module com.wbs.gui_project {
     exports com.wbs.gui_project;
     exports com.wbs.gui_project.controller;
     opens com.wbs.gui_project.controller to javafx.fxml;
+    opens com.wbs.gui_project.model.u4 to javafx.base;
 }

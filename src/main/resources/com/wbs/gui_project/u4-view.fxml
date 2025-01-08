@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ListView?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wbs.gui_project.controller.U4Controller">
+   <Label text="Product Management" style="-fx-font-size: 16px;" />
+   <TextField fx:id="nameField" promptText="Product Name" />
+   <TextField fx:id="descriptionField" promptText="Description" />
+   <TextField fx:id="quantityField" promptText="Quantity" />
+   <TextField fx:id="priceField" promptText="Price (€)" />
+   <Button text="Add Product" onAction="#produktHinzufuegen" />
+   <ListView fx:id="inventoryList" prefHeight="200" />
+</VBox>

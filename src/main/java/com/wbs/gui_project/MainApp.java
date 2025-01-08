@@ -14,7 +14,7 @@ public class MainApp extends Application
     {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("u4-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Lagerverwaltung");
+        //stage.setTitle("Lagerverwaltung");
         stage.setScene(scene);
         stage.show();
     }

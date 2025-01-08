@@ -1,15 +1,13 @@
-package com.wbs.gui_project;
+package com.wbs.gui_project.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
-public class HelloController
+public class MainController
 {
     @FXML
     private TextField tb_eingabe;

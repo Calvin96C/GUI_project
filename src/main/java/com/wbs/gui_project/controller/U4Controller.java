@@ -79,7 +79,7 @@ public class U4Controller
 
             // Validate inputs
             if (name.isEmpty() || description.isEmpty() || quantity < 0 || price < 0) {
-                throw new IllegalArgumentException("Invalid input values.");
+                throw new IllegalArgumentException("Ungültige Eingabewerte.");
             }
 
             // Add product to the ObservableList
@@ -92,9 +92,9 @@ public class U4Controller
             quantityField.clear();
             priceField.clear();
         } catch (NumberFormatException e) {
-            showAlert("Invalid Input", "Please enter valid numeric values for Quantity and Price.");
+            showAlert("Ungültige Eingabe", "Für die Menge & den Preis müssen numerische Werte verwendet werden.");
         } catch (IllegalArgumentException e) {
-            showAlert("Invalid Input", e.getMessage());
+            showAlert("Ungültige Eingabe", e.getMessage());
         }
     }
 
